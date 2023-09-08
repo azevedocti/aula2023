@@ -1,4 +1,10 @@
+import { useState} from 'react';
+
 export function Login() {
+  const [usuario, setUsuario] = useState();
+  const [senha, setSenha] = useState();
+
+  
   return (
     <>
     <form>

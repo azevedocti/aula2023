@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { Login } from '../components/Login';
+
 export function Login() {
   return (
     <>
