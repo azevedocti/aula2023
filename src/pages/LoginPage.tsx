@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-
 export function Login() {
   return (
     <>
       <h1>Login</h1>
+      <Login />
       <Link to="/">Voltar para Home</Link>
 
     </>
