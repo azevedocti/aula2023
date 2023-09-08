@@ -1,12 +1,19 @@
 import { FC } from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Home } from './pages/HomePage';
+import { Login } from './pages/LoginPage';
 
-import './style.css';
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+  },
+  {
+    path: '/login',
+    element: <Login />,
+  },
+]);
 
-export const App: FC<{ name: string }> = ({ name }) => {
-  return (
-    <div>
-      <h1>Hello {name}!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
-  );
+export const App = () => {
+  return <RouterProvider router={router} />;
 };
