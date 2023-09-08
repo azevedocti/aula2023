@@ -1,4 +1,13 @@
-h1,
-p {
-  font-family: Lato;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html,body{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 35%, rgba(97,5,5,1) 100%);
+}
+a{
+  background-color: black;
+  color: white;
 }
