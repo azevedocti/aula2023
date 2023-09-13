@@ -17,6 +17,9 @@ export function UserPage(){
     <h2>Seus Filmes</h2>
     <hr/>
     <h2> Veja outros lançamentos!</h2>
+    {movies?.map(movie => {
+      return <div>{movie.original_title}</div>;
+    })}
     </>
   )
 }
