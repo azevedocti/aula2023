@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Login } from '../components/Login';
+import { CreateAccount } from "../components/CreateAccount";
 
-export function Login() {
 
+export function CreateAccountPage() {
   return (
     <div className="box-login">
-      <h1>Login</h1>
-      <Login />
+      <h1>Criar Conta</h1>
+      <CreateAccount />
       <Link to="/">Voltar para Home</Link>
    </div>
   );
