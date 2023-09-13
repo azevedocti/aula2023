@@ -5,6 +5,7 @@ import { Home } from './pages/HomePage';
 
 
 import { Login } from './pages/LoginPage';
+import { UserPage } from './pages/UserPage';
 
 const router = createBrowserRouter([
   {
@@ -15,9 +16,14 @@ const router = createBrowserRouter([
     path: '/login',
     element: <Login />,
   },
-{path: '/criarconta',
-element: <CreateAccountPage />
-},
+  {
+    path: '/criarconta',
+    element: <CreateAccountPage />
+  },
+  {
+    path: '/usuario',
+    element: <UserPage/>,
+  },
 ]);
 
 export const App = () => {
