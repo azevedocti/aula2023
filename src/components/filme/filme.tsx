@@ -11,12 +11,21 @@ export interface FilmeProps {
 }
 
 export function Filme({filme} : FilmeProps){
+
+  function handleSaveFavorite(){
+    alert("Filme salvo:" + movie.original_title);
+  }
+
   return (  
   <>
   <div className="filme">
   <img src={"https://image.tmdb.org/t/p/w154" + filme.poster_path} />
   <small>{filme.vote_average}</small>
-  <div> {filme.original_title}</div>
+  <button onClick={handleSaveFavorite}>+ Adicionar</button>
+  <div> 
+  <b> {filme.original_title} </b>
+    {filme.release_date}
+  </div>
   </div>
   </>
   );

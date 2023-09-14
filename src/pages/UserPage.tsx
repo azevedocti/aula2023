@@ -29,6 +29,7 @@ export function UserPage() {
       <h2>Veja outros lançamentos</h2>
       <div style={{display: 'grid', 
       gridTemplateColumns:'1fr 1fr 1fr',
+      gap: "1rem",
     }}
       >
       {movies?.map((movie) => {
