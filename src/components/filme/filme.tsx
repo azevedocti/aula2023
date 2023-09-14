@@ -13,7 +13,7 @@ export interface FilmeProps {
 export function Filme({filme} : FilmeProps){
 
   function handleSaveFavorite(){
-    alert("Filme salvo:" + movie.original_title);
+    alert("Filme salvo:" + filme.original_title);
   }
 
   return (  
