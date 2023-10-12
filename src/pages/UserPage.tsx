@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Filme } from '../components/filme/filme';
-
 import { getDiscoverMovies } from '../services/moviedb';
+import { addItem } from '../services/firebase';
+
 
 export function UserPage() {
   const [movies, setMovies] = useState([]);
