@@ -10,10 +10,11 @@ export interface FilmeProps {
   filme: FilmeInterface;
 }
 
-export function Filme({filme} : FilmeProps){
+export function Filme({filme, onFavorite}){  // Adicionando prop onFavorite
 
   function handleSaveFavorite(){
     alert("Filme salvo:" + filme.original_title);
+    onFavorite(filme);
   }
 
   return (  
