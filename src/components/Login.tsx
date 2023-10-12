@@ -1,5 +1,5 @@
 import { FormEvent, useState} from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import useLocalstorage from '../hooks/useLocalstorage';
 
 
@@ -9,12 +9,14 @@ export function Login() {
   const [usuario, setUsuario] = useState('')
   const [senha, setSenha] = useState('');
   const [userId, setUserId] = useLocalstorage('userId','');
+  const navigate = useNavigate();
 
     function handleLogin(e: FormEvent){
       e.preventDefault();
      signIn(usuario, senha)
      .then((credential)=> {
        alert('Bem-Vindo!' + credential.user.uid);
+       navigate("/usuario");
      })
      .catch((error)=> {
        console.log(error);

@@ -23,6 +23,6 @@ export function signIn(usuario: string, senha: string) {
   return signInWithEmailAndPassword(auth, usuario, senha);
 }
 
-export function CreateUser(usuario: string, senha: string) {
+export function createUser(usuario: string, senha: string) {
   return createUserWithEmailAndPassword(auth, usuario, senha);
 }
